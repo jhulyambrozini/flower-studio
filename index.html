@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flower Studio</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Satisfy&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+
+    
+</head>
+<body>
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="cabeca">
+        <div class="container">
+
+            <h1 class="navbar-brand m-0 section-title">Flower studio</h1>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
+                <ul class="nav nav-pills d-block d-md-flex">
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#about">
+                            <i class="bi bi-house-door me-1"></i>
+                            Sobre
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#arrangements">
+                            <i class="bi bi-flower3 me-1"></i>
+                            Arranjos
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#menu">
+                            <i class="bi bi-card-text me-1"></i>
+                            Nosso catálogo
+                        </a>
+                    </li>
+                    <li class="nav-item fw-bold">
+                        <a class="nav-link" href="#contact">
+                            <i class="bi bi-chat-left-text me-1"></i>
+                            Fale conosco
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
+        <section  id="about">
+            <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="4000">
+                        <img src="./images/slide/fachada.jpg" alt="Fachada da loja, com varias plantas e flores em volta.">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="./images/slide/bancada.jpg" alt="Uma mulher de avental, sorrindo e segurando um buquê de tulipas, com flores ao redor dela.">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="4000">
+                        <img src="./images/slide/producao.jpg" alt="Duas mulheres usando aventais, uma estar sendata e usando computador e a outra um tablet, ambas sorriem ao olhar as imagens.">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev" >
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+    
+            <div class="mt-5 pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <img class="w-100 rounded d-block" src="./images/slide/fucionarios.jpg" alt="Duas mulheres usando aventais atrás de um balcão, uma segura uma cesta com flores.">
+                        </div>
+        
+                        <div class="col-md-7 mt-3 mt-md-0">
+                            <h2 class="section-title">Sobre <span class="text-colored">a Flower</span></h2>
+    
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi explicabo eaque, sapiente cupiditate cumque sint veniam fugiat rem laborum dicta saepe nostrum animi nesciunt aut inventore distinctio vitae tenetur blanditiis
+                            </p>
+    
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate laudantium natus debitis iure. Rem in possimus corporis quaerat consequatur, iste nulla error quos vitae debitis dolorem tenetur porro hic cupiditate!
+                            </p>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis error illo accusamus similique dolorum sequi totam suscipit non cum at culpa ipsum, dolor eos voluptas sint consequatur praesentium, omnis quas?
+                            </p>
+                            <h3 class="section-title">Sobre <span class="text-colored">encomendas</span></h3>
+                            <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio rerum provident dignissimos, consequatur accusantium autem impedit quia atque, eveniet tenetur voluptatem. Exercitationem placeat numquam excepturi! Eos quaerat illum alias necessitatibus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+        <section id="arrangements" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title text-center">Para todas <span class="text-colored"> as ocasiões</span></h2>
+                </div>
+                <div class="row mt-4">
+                    <div class="col-md-3">
+                        <img src="./images/arranjo/arranjo-aniversario.jpg" alt="Buquê de rosas com uma caixa de champanhe e bomboms ao lado." class="d-block w-100 rounded">
+                        <h3 class="section-title text-colored mt-3 fs-4">Aniversário</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio reiciendis, sed neque dolore aperiam voluptatibus sapiente sequi eos inventore molestiae adipisci unde architecto eaque eius nobis voluptatem. Mollitia, assumenda.
+                        </p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="./images/arranjo/arranjo-casamento.jpg" alt="Arranjo de rosas brancas em cima de uma mesa de jantar." class="d-block w-100 rounded">
+                        <h3 class="section-title text-colored mt-3 fs-4">Casamentos</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio reiciendis, sed neque dolore aperiam voluptatibus sapiente sequi eos inventore molestiae adipisci unde architecto eaque eius nobis voluptatem. Mollitia, assumenda.
+                        </p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="./images/arranjo/arranjo-noiva.jpg" alt="Arranjo de rosas brancas para noivas." class="d-block w-100 rounded">
+                        <h3 class="section-title text-colored mt-3 fs-4">Buque de noiva</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio reiciendis, sed neque dolore aperiam voluptatibus sapiente sequi eos inventore molestiae adipisci unde architecto eaque eius nobis voluptatem. Mollitia, assumenda.
+                        </p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="./images/arranjo/arranjo-funeral.jpg" alt="Coroa de flores amarelas para funerais." class="d-block w-100 rounded">
+                        <h3 class="section-title text-colored mt-3 fs-4">Funerais</h3>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio reiciendis, sed neque dolore aperiam voluptatibus sapiente sequi eos inventore molestiae adipisci unde architecto eaque eius nobis voluptatem. Mollitia, assumenda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="menu" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title mb-5 text-center">
+                        Nosso <span class="text-colored"> catálogo</span>
+                    </h2>
+                </div>
+                <div class="row">
+                    <aside class="col-md-2">
+                        <nav class="nav nav-pills flex-column nav-menu">
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#buques" class="nav-link text-colored fw-bold text-start active">Buquês</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#guirlandas" class="nav-link text-colored fw-bold text-start">Quirlandas</button>
+                            <button type="button" data-bs-toggle="tab" data-bs-target="#vasos" class="nav-link text-colored fw-bold text-start">Vasos</button>
+                        </nav>
+                    </aside>
+                    <div class="col-md-10">
+                        <div class="tab-content">
+                            <div class="tab-pane active" id="buques">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/buque-01.jpg" alt="Buquê de rosas vermelhas.">
+                                        <h5 class="text-colored fw-bold mt-2">Buquê 01</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/buque-02.jpg" alt="Buquê de flores do campo">
+                                        <h5 class="text-colored fw-bold mt-2">Buquê 02</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/buque-03.jpeg" alt="buquê de rosas.">
+                                        <h5 class="text-colored fw-bold mt-2">Buquê 03</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/buque-04.jpg" alt="Buquê de liríos.">
+                                        <h5 class="text-colored fw-bold mt-2">Buquê 04</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="guirlandas">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/guirlanda-01.jpg" alt="Guirlanda de flores do campo.">
+                                        <h5 class="text-colored fw-bold mt-2">Guirlanda 01</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/guirlanda-02.jpg" alt="Guirlanda de rosas.">
+                                        <h5 class="text-colored fw-bold mt-2">Guirlanda 02</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/guirlanda-03.jpg" alt="Guirlanda flores brancas.">
+                                        <h5 class="text-colored fw-bold mt-2">Guirlanda 03</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/guirlanda-04.jpg" alt="Guirlanda rosas brancas.">
+                                        <h5 class="text-colored fw-bold mt-2">Guirlanda 04</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane" id="vasos">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/vaso-01.jpg" alt="Vaso de flores lilázes.">
+                                        <h5 class="text-colored fw-bold mt-2">Vaso florido 01</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/vaso-02.jpg" alt="Vaso de flores de algodão.">
+                                        <h5 class="text-colored fw-bold mt-2">Vaso florido 02</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/vaso-03.jpg" alt="Vaso de rosas roxas.">
+                                        <h5 class="text-colored fw-bold mt-2">Vaso florido 03</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+
+                                    <div class="col-md-3">
+                                        <img class="d-block w-100" src="./images/catalogo/vaso-04.jpg" alt="Vasos de rosas laranjas.">
+                                        <h5 class="text-colored fw-bold mt-2">Vaso florido 04</h5>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <h2 class="section-title"> Fale <span class="text-colored">conosco</span></h2>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-7 mb-5">
+                        <form id="form-validate">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="name">Seu nome</label>
+                                <input type="text" class="form-control" id="name" minlength="3" required>
+                                <small id="helpName" class="text-muted">
+                                    Digite um nome válido!
+                                </small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="email">Seu email</label>
+                                <input type="email" class="form-control" id="email" required>
+                                <small id="helpEmail" class="text-muted">
+                                    Digite um email válido!
+                                </small>
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="tel">Seu telefone (opcional)</label>
+                                <input type="tel" class="form-control" id="tel">
+                            </div>
+                            <div class="mb-3">
+                                <label class="form-label fw-bold text-colored" for="msg">Sua mensagem</label>
+                                <textarea type="text" class="form-control" id="msg" maxlength="200" minlength="10" required></textarea>
+                                <small id="helpText" class="text-muted">
+                                    Você precisa digitar algo!
+                                </small>
+                            </div>
+                            <button type="submit" class="btn fw-bold mb-sm-3">Enviar</button>
+                        </form>
+                    </div>
+
+                    <div class="col-md-5">
+                        <div class="row">
+                            <h3 class="text-colored fs-4 section-title">
+                                <i class="bi bi-hand-thumbs-up-fill"></i>
+                                Redes sociais</h3>
+                            <ul class="social-links">
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-facebook text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5 ms-1 me-1">
+                                    <a href="">
+                                        <i class="bi bi-instagram text-colored"></i>
+                                    </a>
+                                </li>
+                                <li class="fs-5">
+                                    <a href="">
+                                        <i class="bi bi-whatsapp text-colored"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="row mt-4">
+                            <h3 class="text-colored fs-4 section-title">
+                                <i class="bi bi-cursor-fill"></i>    
+                                Endereço
+                            </h3>
+                            <p>
+                                Rua Teste Exemplo n° 234, Bairro Bootstrap - São Mateus - ES
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center pb-3 pt-3">
+            <p class="m-0">&copy; 2023. Flower Studio - Todos os direitos reservados. </p>
+            <small>Desenvolvido por <a href="https://github.com/jhulyambrozini">Jhuly</a></small>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="./js/jquery.mask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/index.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#tel').mask('(00) 00000-0000');
+        })
+    </script>
+</body>
+</html>
