@@ -1,3 +1,4 @@
+const allImages = document.querySelectorAll('img')
 
 function validate(elem) {
    if (elem.val() == '') {
@@ -14,6 +15,30 @@ function validate(elem) {
       elem.removeClass('invalid')
    }
 }
+
+function showImages() {
+   allImages.forEach(img => {
+      img.classList.remove('skeleton')
+   })
+}
+
+// function showSkeleton() {
+//    allImages.forEach(img => {
+//       img.classList.add('skeleton')
+//       console.log('add')
+//    })
+// }
+
+// window.addEventListener('loadstart', () => {
+//    console.log('A página está começando a carregar.');
+//    showSkeleton()
+// });
+
+// Evento quando a página está completamente carregada
+window.addEventListener('load', () => {
+   console.log('A página foi completamente carregada.');
+   showImages()
+});
 
 $('form').on('submit', function (e) {
 

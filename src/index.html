@@ -20,13 +20,13 @@
     <header class="navbar navbar-expand-lg sticky-top p-4" id="header">
         <div class="container">
             <h1 class="navbar-brand m-0 section-title">Flower Studio</h1>
-            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+            <button title="menu" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <nav class="navbar-collapse collapse justify-content-end" id="menu-nav">
                 <ul class="nav nav-pills d-block d-md-flex">
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#about">
+                        <a class="nav-link" href="#about" title="Ir para sobre">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
                                 class="bi bi-house-door" viewBox="0 0 16 16" aria-label="icone de uma casa">
                                 <path
@@ -36,7 +36,7 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#arrangements">
+                        <a class="nav-link" href="#events" title="Ir para eventos">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
                                 class="bi bi-flower3" viewBox="0 0 16 16">
                                 <path
@@ -46,7 +46,7 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#catalog">
+                        <a class="nav-link" href="#catalog" title="Ir para catálogo">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
                                 class="bi bi-card-text" viewBox="0 0 16 16">
                                 <path
@@ -58,7 +58,7 @@
                         </a>
                     </li>
                     <li class="nav-item fw-bold">
-                        <a class="nav-link" href="#contact">
+                        <a class="nav-link" href="#contact" title="Ir para contato">
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
                                 class="bi bi-chat-left-text" viewBox="0 0 16 16">
                                 <path
@@ -75,63 +75,78 @@
     </header>
 
     <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-        <section id="about">
+        <section id="carousel-container">
             <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="4000">
                         <img src="../assets/images/slide/loja-01.jpg"
-                            alt="Fachada da loja, com varias plantas e flores em volta.">
+                            alt="Fachada da Flower Studio, com varias plantas e flores do lado de detro e do lado de fora.">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
                         <img src="../assets/images/slide/loja-02.jpg"
-                            alt="Uma mulher de avental, sorrindo e segurando um buquê de tulipas, com flores ao redor dela.">
+                            alt="Uma funcionária branca de cabelo castanho usando avental e sorrindo está segurando um buquê de tulipas, há buquês diversos ao redor dela.">
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
                         <img src="../assets/images/slide/loja-03.jpg"
-                            alt="Duas mulheres usando aventais, uma estar sendata e usando computador e a outra um tablet, ambas sorriem ao olhar as imagens.">
+                            alt="Outra funcionária branca de cabelo preto usando avental e sorrindo está arrumando um vaso de flores brancas.">
                     </div>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                <button title="slide anterior" class="carousel-control-prev" type="button" data-bs-target="#carousel"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon"></span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                <button title="próximo slide" class="carousel-control-next" type="button" data-bs-target="#carousel"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
 
-            <div class="mt-5 pt-5 pb-5">
+            <div class="pt-5 pb-5" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
                             <img class="w-100 rounded d-block" src="../assets/images/bancada.jpg"
-                                alt="Duas mulheres usando aventais atrás de um balcão, uma segura uma cesta com flores.">
+                                alt="Duas funcionárias brancas usando aventais atrás de um balcão, uma segura uma cesta com flores. Ambas estão sorrindo.">
                         </div>
 
                         <div class="col-md-7 mt-3 mt-md-0">
                             <h2 class="section-title">Sobre <span class="text-colored">a Flower</span></h2>
 
                             <p>
-                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi explicabo eaque,
-                                sapiente cupiditate cumque sint veniam fugiat rem laborum dicta saepe nostrum animi
-                                nesciunt aut inventore distinctio vitae tenetur blanditiis
+                                Bem-vindo à Flower Studio, a floricultura que transforma cada ocasião em um espetáculo
+                                de cores e fragrâncias. Localizada em um pitoresco cantinho da cidade, nossa loja é um
+                                refúgio encantador para os amantes da natureza e da beleza floral.
                             </p>
 
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate laudantium natus
-                                debitis iure. Rem in possimus corporis quaerat consequatur, iste nulla error quos vitae
-                                debitis dolorem tenetur porro hic cupiditate!
+                                Ao adentrar o espaço aconchegante da Flower Studio, você será recebido por um mar de
+                                cores vibrantes e uma sinfonia de aromas florais que despertam os sentidos. Nossas
+                                prateleiras exibem flores frescas, desde as clássicas rosas até as exóticas orquídeas,
+                                cada uma representando qualidade e beleza.
                             </p>
                             <p>
-                                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Veritatis error illo accusamus
-                                similique dolorum sequi totam suscipit non cum at culpa ipsum, dolor eos voluptas sint
-                                consequatur praesentium, omnis quas?
+                                Seja para celebrar aniversários, expressar amor, oferecer condolências ou simplesmente
+                                iluminar o dia de alguém especial, nossos arranjos florais são criações únicas,
+                                elaboradas pelos nossos talentosos floristas. Cada ramalhete é uma obra-prima artesanal,
+                                combinando cores, texturas e formas para transmitir emoções de maneira única.
                             </p>
-                            <h3 class="section-title">Sobre <span class="text-colored">encomendas</span></h3>
+                            <h3 class="section-title mt-5">Sobre <span class="text-colored">encomendas</span></h3>
                             <p>
-                                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Distinctio rerum provident
-                                dignissimos, consequatur accusantium autem impedit quia atque, eveniet tenetur
-                                voluptatem. Exercitationem placeat numquam excepturi! Eos quaerat illum alias
-                                necessitatibus.
+                                Também valorizamos a personalização, e é por isso que oferecemos um serviço de
+                                encomendas especializado. Se você tem uma ideia específica em mente ou deseja adaptar um
+                                arranjo existente, nossa equipe dedicada está pronta para transformar sua visão em
+                                realidade.
+                            </p>
+                            <p>
+                                Além disso, facilitamos o processo de encomenda online, proporcionando conveniência aos
+                                nossos clientes ocupados. Basta navegar em nosso catálogo virtual, escolher entre uma
+                                variedade de opções e personalizar conforme necessário. Nossa entrega pontual e serviço
+                                dedicado asseguram que suas flores cheguem frescas e impecáveis ao destino desejado.
+                            </p>
+                            <p>
+                                Na Flower Studio, acreditamos que flores não são apenas presentes, são mensagens vivas
+                                de amor, apreço e celebração. Venha nos visitar e permita-nos criar momentos mágicos com
+                                nossas flores extraordinárias e atendimento excepcional.
                             </p>
                         </div>
                     </div>
@@ -140,7 +155,7 @@
             </div>
         </section>
 
-        <section id="arrangements" class="pt-5 pb-5">
+        <section id="events" class="pt-5 pb-5">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title text-center">Para todas <span class="text-colored"> as ocasiões</span></h2>
@@ -148,46 +163,50 @@
                 <div class="row mt-4">
                     <div class="col-md-3">
                         <img src="../assets/images/eventos/eventos-aniversario.jpg"
-                            alt="Buquê de rosas com uma caixa de champanhe e bomboms ao lado."
-                            class="d-block w-100 rounded">
+                            alt="Uma cesta pendurada um galho de árvore com rosas claras dentro."
+                            class="d-block w-100 rounded skeleton">
                         <h3 class="section-title text-colored mt-3 fs-4">Aniversário</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio reiciendis, sed neque
-                            dolore aperiam voluptatibus sapiente sequi eos inventore molestiae adipisci unde architecto
-                            eaque eius nobis voluptatem. Mollitia, assumenda.
+                            Celebre aniversários com alegria com os buquês da "Renascer das Flores". Escolha entre
+                            clássicas rosas vermelhas ou a positividade dos girassóis. Personalize seu buquê para
+                            torná-lo especial. Oferecemos embalagens elegantes e entregas pontuais para tornar o dia
+                            ainda mais memorável.
                         </p>
                     </div>
 
                     <div class="col-md-3">
                         <img src="../assets/images/eventos/eventos-casamento.jpg"
-                            alt="Arranjo de rosas brancas em cima de uma mesa de jantar." class="d-block w-100 rounded">
+                            alt="Vasos com flores diversas em cima de uma mesa, ao fundo um pergolado florido."
+                            class="d-block w-100 rounded">
                         <h3 class="section-title text-colored mt-3 fs-4">Casamentos</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio reiciendis, sed neque
-                            dolore aperiam voluptatibus sapiente sequi eos inventore molestiae adipisci unde architecto
-                            eaque eius nobis voluptatem. Mollitia, assumenda.
+                            Transformamos seus sonhos em uma decoração de casamento verdadeiramente encantadora. Desde o
+                            início da sua jornada sob um arco magnífico, até os centros de mesa que se tornam
+                            verdadeiras obras de arte em cada lugar, cada elemento da decoração é uma expressão
+                            memorável.
                         </p>
                     </div>
 
                     <div class="col-md-3">
-                        <img src="../assets/images/eventos/eventos-noiva.jpg"
-                            alt="Arranjo de rosas brancas para noivas." class="d-block w-100 rounded">
+                        <img src="../assets/images/eventos/eventos-noiva.jpg" alt="Buquê de tulipas roxas"
+                            class="d-block w-100 rounded">
                         <h3 class="section-title text-colored mt-3 fs-4">Buque de noiva</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio reiciendis, sed neque
-                            dolore aperiam voluptatibus sapiente sequi eos inventore molestiae adipisci unde architecto
-                            eaque eius nobis voluptatem. Mollitia, assumenda.
+                            Diga "sim" com elegância e beleza com os buquês de noiva da "Eterna Primavera". Nossos
+                            floristas dedicados garantem que seu buquê seja tão único quanto você. Personalize o seu
+                            buquê para complementar o seu estilo e tema do casamento.
                         </p>
                     </div>
 
                     <div class="col-md-3">
                         <img src="../assets/images/eventos/eventos-funeral.jpg"
-                            alt="Coroa de flores amarelas para funerais." class="d-block w-100 rounded">
+                            alt="Grande vaso com rosas amarelas, vermelhas e rosas ao lado de um castiçal."
+                            class="d-block w-100 rounded">
                         <h3 class="section-title text-colored mt-3 fs-4">Funerais</h3>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint odio reiciendis, sed neque
-                            dolore aperiam voluptatibus sapiente sequi eos inventore molestiae adipisci unde architecto
-                            eaque eius nobis voluptatem. Mollitia, assumenda.
+                            Em momentos de luto, a "Luz Serena" está aqui para oferecer buquês de condolências que
+                            expressam sentimentos com ternura e respeito. Nossos arranjos funerários combinam flores
+                            suaves e cores serenas para transmitir conforto e lembrança.
                         </p>
                     </div>
                 </div>
@@ -204,12 +223,14 @@
                 <div class="row">
                     <aside class="col-md-2">
                         <nav class="nav nav-pills flex-column nav-menu">
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#buques"
+                            <button title="Catálogo de buquês" type="button" data-bs-toggle="tab"
+                                data-bs-target="#buques"
                                 class="nav-link text-colored fw-bold text-start active">Buquês</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#guirlandas"
+                            <button title="Catálogo de guirlandas" type="button" data-bs-toggle="tab"
+                                data-bs-target="#guirlandas"
                                 class="nav-link text-colored fw-bold text-start">Quirlandas</button>
-                            <button type="button" data-bs-toggle="tab" data-bs-target="#vasos"
-                                class="nav-link text-colored fw-bold text-start">Vasos</button>
+                            <button title="Catálogo de vasos floridos" type="button" data-bs-toggle="tab"
+                                data-bs-target="#vasos" class="nav-link text-colored fw-bold text-start">Vasos</button>
                         </nav>
                     </aside>
                     <div class="col-md-10">
@@ -217,31 +238,43 @@
                             <div class="tab-pane active" id="buques">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded" src="../assets/images/catalogo/buque-01.jpg"
+                                        <img class="d-block w-100 rounded-top"
+                                            src="../assets/images/catalogo/buque-01.jpg"
                                             alt="Buquê de rosas vermelhas.">
-                                        <h3 class="text-colored fw-bold mt-2">Buquê 01</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Rosas celestiais</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded" src="../assets/images/catalogo/buque-02.jpg"
-                                            alt="Buquê de flores do campo">
-                                        <h3 class="text-colored fw-bold mt-2">Buquê 02</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <img class="d-block w-100 rounded-top"
+                                            src="../assets/images/catalogo/buque-02.jpg" alt="Buquê de flores do campo">
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Sonho lavanda</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded" src="../assets/images/catalogo/buque-03.jpg"
-                                            alt="buquê de rosas.">
-                                        <h3 class="text-colored fw-bold mt-2">Buquê 03</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <img class="d-block w-100 rounded-top"
+                                            src="../assets/images/catalogo/buque-03.jpg" alt="buquê de rosas.">
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Caminho selvagem</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded" src="../assets/images/catalogo/buque-04.jpg"
-                                            alt="Buquê de liríos.">
-                                        <h3 class="text-colored fw-bold mt-2">Buquê 04</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <img class="d-block w-100 rounded-top"
+                                            src="../assets/images/catalogo/buque-04.jpg" alt="Buquê de liríos.">
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Paixão ardente</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -249,34 +282,46 @@
                             <div class="tab-pane" id="guirlandas">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded"
+                                        <img class="d-block w-100 rounded-top"
                                             src="../assets/images/catalogo/guirlanda-01.jpg"
                                             alt="Guirlanda de flores do campo.">
-                                        <h3 class="text-colored fw-bold mt-2">Guirlanda 01</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Luminosidade solar</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded"
+                                        <img class="d-block w-100 rounded-top"
                                             src="../assets/images/catalogo/guirlanda-02.jpg" alt="Guirlanda de rosas.">
-                                        <h3 class="text-colored fw-bold mt-2">Guirlanda 02</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Primavera um botões</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded"
+                                        <img class="d-block w-100 rounded-top"
                                             src="../assets/images/catalogo/guirlanda-03.jpg"
                                             alt="Guirlanda flores brancas.">
-                                        <h3 class="text-colored fw-bold mt-2">Guirlanda 03</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Ecos da natureza</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded"
+                                        <img class="d-block w-100 rounded-top"
                                             src="../assets/images/catalogo/guirlanda-04.jpg"
                                             alt="Guirlanda rosas brancas.">
-                                        <h3 class="text-colored fw-bold mt-2">Guirlanda 04</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Radiância dourada</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -284,31 +329,43 @@
                             <div class="tab-pane" id="vasos">
                                 <div class="row">
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded" src="../assets/images/catalogo/vaso-01.jpg"
-                                            alt="Vaso de flores lilázes.">
-                                        <h3 class="text-colored fw-bold mt-2">Vaso florido 01</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <img class="d-block w-100 rounded-top"
+                                            src="../assets/images/catalogo/vaso-01.jpg" alt="Vaso de flores lilázes.">
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Elegância floral</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded" src="../assets/images/catalogo/vaso-02.jpg"
+                                        <img class="d-block w-100 rounded-top"
+                                            src="../assets/images/catalogo/vaso-02.jpg"
                                             alt="Vaso de flores de algodão.">
-                                        <h3 class="text-colored fw-bold mt-2">Vaso florido 02</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Rústico encantador</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded" src="../assets/images/catalogo/vaso-03.jpg"
-                                            alt="Vaso de rosas roxas.">
-                                        <h3 class="text-colored fw-bold mt-2">Vaso florido 03</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <img class="d-block w-100 rounded-top"
+                                            src="../assets/images/catalogo/vaso-03.jpg" alt="Vaso de rosas roxas.">
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Harmonia floral</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
 
                                     <div class="col-md-3">
-                                        <img class="d-block w-100 rounded" src="../assets/images/catalogo/vaso-04.jpg"
-                                            alt="Vasos de rosas laranjas.">
-                                        <h3 class="text-colored fw-bold mt-2">Vaso florido 04</h3>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                        <img class="d-block w-100 rounded-top"
+                                            src="../assets/images/catalogo/vaso-04.jpg" alt="Vasos de rosas laranjas.">
+
+                                        <div class="catalog-infos">
+                                            <h3 class="text-colored fw-bold mt-2">Aromas da provence</h3>
+                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
