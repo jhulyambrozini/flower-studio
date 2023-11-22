@@ -1,4 +1,5 @@
 const allImages = document.querySelectorAll('div .loading')
+const btnSubmit = document.querySelector('btn-submit')
 
 function showImages() {
    allImages.forEach(img => {
@@ -56,3 +57,11 @@ $('body').on('blur', '#email', function () {
 $('body').on('blur', '#msg', function () {
    validate($(this))
 })
+
+const submitForm = (e) => {
+   e.preventDefault()
+
+   setTimeout()
+
+}
+

@@ -166,6 +166,10 @@ footer a:hover {
     text-transform: uppercase;
 }
 
+.btn-submit:hover {
+    background-color: rgb(62, 107, 107);
+}
+
 .social-links li {
     list-style: none;
     display: inline;

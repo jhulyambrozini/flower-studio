@@ -5,14 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bem-vindo à Flower Studio, a floricultura que transforma cada ocasião em um espetáculo
+    de cores e fragrâncias. Localizada em um pitoresco cantinho da cidade, nossa loja é um
+    refúgio encantador para os amantes da natureza e da beleza floral.">
     <title>Flower Studio</title>
 
     <link rel="stylesheet" href="../libs/bootstrap/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Satisfy&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../public/css/styles.css">
 
 </head>
 
@@ -79,15 +81,15 @@
             <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active loading" data-bs-interval="4000">
-                        <img src="../assets/images/slide/loja-01.jpg"
+                        <img src="../public/images/loja-02.jpg" class="lazyload w-100"
                             alt="Fachada da Flower Studio, com varias plantas e flores do lado de detro e do lado de fora.">
                     </div>
                     <div class="carousel-item loading" data-bs-interval="4000">
-                        <img src="../assets/images/slide/loja-02.jpg"
+                        <img data-src="../public/images/loja-02.jpg" class="lazyload w-100"
                             alt="Uma funcionária branca de cabelo castanho usando avental e sorrindo está segurando um buquê de tulipas, há buquês diversos ao redor dela.">
                     </div>
                     <div class="carousel-item loading" data-bs-interval="4000">
-                        <img src="../assets/images/slide/loja-03.jpg"
+                        <img data-src="../public/images/loja-03.jpg" class="lazyload w-100"
                             alt="Outra funcionária branca de cabelo preto usando avental e sorrindo está arrumando um vaso de flores brancas.">
                     </div>
                 </div>
@@ -105,7 +107,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6 loading">
-                            <img class="w-100 rounded d-block" src="../assets/images/bancada.jpg"
+                            <img class="w-100 rounded d-block lazyload" data-src="../public/images/bancada.jpg"
                                 alt="Duas funcionárias brancas usando aventais atrás de um balcão, uma segura uma cesta com flores. Ambas estão sorrindo.">
                         </div>
 
@@ -159,9 +161,9 @@
                 <div class="row mt-4 justify-content-center">
                     <div class="col-md-6 mb-4 col-11 col-lg-3">
                         <div class="loading card-events">
-                            <img src="../assets/images/eventos/eventos-aniversario.jpg"
+                            <img data-src="../public/images/eventos-aniversario.jpg"
                                 alt="Uma cesta pendurada um galho de árvore com rosas claras dentro."
-                                class="d-block w-100 rounded-top skeleton">
+                                class="d-block w-100 rounded-top lazyload">
                             <h3 class="section-title text-colored mt-3 fs-4">Aniversário</h3>
                             <p class="pt-2">
                                 Celebre aniversários com alegria com os buquês da "Renascer das Flores". Escolha entre
@@ -172,9 +174,9 @@
 
                     <div class="col-md-6 mb-4 col-11 col-lg-3">
                         <div class="loading card-events">
-                            <img src="../assets/images/eventos/eventos-casamento.jpg"
+                            <img data-src="../public/images/eventos-casamento.jpg"
                                 alt="Vasos com flores diversas em cima de uma mesa, ao fundo um pergolado florido."
-                                class="d-block w-100 rounded-top">
+                                class="d-block w-100 rounded-top lazyload">
                             <h3 class="section-title text-colored mt-3 fs-4">Casamentos</h3>
                             <p class="pt-2">
                                 Desde o início da sua jornada sob um arco magnífico, até os centros de mesa que se
@@ -185,8 +187,8 @@
 
                     <div class="col-md-6 mb-4 col-11 col-lg-3">
                         <div class="loading card-events">
-                            <img src="../assets/images/eventos/eventos-noiva.jpg" alt="Buquê de tulipas roxas"
-                                class="d-block w-100 rounded-top">
+                            <img data-src="../public/images/eventos-noiva.jpg" alt="Buquê de tulipas roxas"
+                                class="d-block w-100 rounded-top lazyload">
                             <h3 class="section-title text-colored mt-3 fs-4">Buque de noiva</h3>
                             <p class="pt-2">
                                 Diga "sim" com elegância e beleza com os buquês de noiva.
@@ -197,9 +199,9 @@
 
                     <div class="col-md-6 mb-4 col-11 col-lg-3">
                         <div class="loading card-events">
-                            <img src="../assets/images/eventos/eventos-funeral.jpg"
+                            <img data-src="../public/images/eventos-funeral.jpg"
                                 alt="Grande vaso com rosas amarelas, vermelhas e rosas ao lado de um castiçal."
-                                class="d-block w-100 rounded-top">
+                                class="d-block w-100 rounded-top lazyload">
                             <h3 class="section-title text-colored mt-3 fs-4">Funerais</h3>
                             <p class="pt-2">
                                 Em momentos de luto, a "Luz Serena" está aqui para oferecer buquês de condolências que
@@ -237,9 +239,9 @@
                                 <div class="row justify-content-center">
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
                                         <div class="loading">
-                                            <img class="d-block w-100 rounded-top"
-                                                src="../assets/images/catalogo/buque-01.jpg"
-                                                alt="Buquê de rosas vermelhas.">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/buque-01.jpg"
+                                                alt="Buquê de rosas vermelhas e amarelas em um banco.">
                                             <div class="catalog-infos">
                                                 <h3 class="text-colored fw-bold">Rosas <br> Celestiais</h3>
                                                 <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
@@ -249,9 +251,9 @@
 
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
                                         <div class="loading">
-                                            <img class="d-block w-100 rounded-top"
-                                                src="../assets/images/catalogo/buque-02.jpg"
-                                                alt="Buquê de flores do campo">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/buque-02.jpg"
+                                                alt="Buquê de flores roas e roxas diversas.">
 
                                             <div class="catalog-infos">
                                                 <h3 class="text-colored fw-bold">Sonho <br> Lavanda</h3>
@@ -262,8 +264,8 @@
 
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
                                         <div class="loading">
-                                            <img class="d-block w-100 rounded-top"
-                                                src="../assets/images/catalogo/buque-03.jpg" alt="buquê de rosas.">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/buque-03.jpg" alt="buquê de rosas.">
 
                                             <div class="catalog-infos">
                                                 <h3 class="text-colored fw-bold">Caminho <br> Selvagem</h3>
@@ -275,8 +277,8 @@
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
                                         <div class="loading">
 
-                                            <img class="d-block w-100 rounded-top"
-                                                src="../assets/images/catalogo/buque-04.jpg" alt="Buquê de liríos.">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/buque-04.jpg" alt="Buquê de liríos.">
 
                                             <div class="catalog-infos">
                                                 <h3 class="text-colored fw-bold">Paixão <br> Ardente</h3>
@@ -290,8 +292,8 @@
                             <div class="tab-pane" id="guirlandas">
                                 <div class="row justify-content-center">
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
-                                        <img class="d-block w-100 rounded-top"
-                                            src="../assets/images/catalogo/guirlanda-01.jpg"
+                                        <img class="d-block w-100 rounded-top lazyload"
+                                            data-src="../public/images/guirlanda-01.jpg"
                                             alt="Guirlanda de flores do campo.">
 
                                         <div class="catalog-infos">
@@ -301,34 +303,40 @@
                                     </div>
 
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
-                                        <img class="d-block w-100 rounded-top"
-                                            src="../assets/images/catalogo/guirlanda-02.jpg" alt="Guirlanda de rosas.">
+                                        <div class="loading">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/guirlanda-02.jpg" alt="Guirlanda de rosas.">
 
-                                        <div class="catalog-infos">
-                                            <h3 class="text-colored fw-bold">Primavera <br> em Botões</h3>
-                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            <div class="catalog-infos">
+                                                <h3 class="text-colored fw-bold">Primavera <br> em Botões</h3>
+                                                <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
-                                        <img class="d-block w-100 rounded-top"
-                                            src="../assets/images/catalogo/guirlanda-03.jpg"
-                                            alt="Guirlanda flores brancas.">
+                                        <div class="loading">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/guirlanda-03.jpg"
+                                                alt="Guirlanda flores brancas.">
 
-                                        <div class="catalog-infos">
-                                            <h3 class="text-colored fw-bold">Ecos da <br> Natureza</h3>
-                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            <div class="catalog-infos">
+                                                <h3 class="text-colored fw-bold">Ecos da <br> Natureza</h3>
+                                                <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
-                                        <img class="d-block w-100 rounded-top"
-                                            src="../assets/images/catalogo/guirlanda-04.jpg"
-                                            alt="Guirlanda rosas brancas.">
+                                        <div class="loading">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/guirlanda-04.jpg"
+                                                alt="Guirlanda rosas brancas.">
 
-                                        <div class="catalog-infos">
-                                            <h3 class="text-colored fw-bold">Radiância <br> Dourada</h3>
-                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            <div class="catalog-infos">
+                                                <h3 class="text-colored fw-bold">Radiância <br> Dourada</h3>
+                                                <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -337,42 +345,50 @@
                             <div class="tab-pane" id="vasos">
                                 <div class="row justify-content-center">
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
-                                        <img class="d-block w-100 rounded-top"
-                                            src="../assets/images/catalogo/vaso-01.jpg" alt="Vaso de flores lilázes.">
+                                        <div class="loading">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/vaso-01.jpg" alt="Vaso de flores lilázes.">
 
-                                        <div class="catalog-infos">
-                                            <h3 class="text-colored fw-bold">Elegância <br> Floral</h3>
-                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            <div class="catalog-infos">
+                                                <h3 class="text-colored fw-bold">Elegância <br> Floral</h3>
+                                                <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
-                                        <img class="d-block w-100 rounded-top"
-                                            src="../assets/images/catalogo/vaso-02.jpg"
-                                            alt="Vaso de flores de algodão.">
-                                        <div class="catalog-infos">
-                                            <h3 class="text-colored fw-bold">Rústico <br> Encantador</h3>
-                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                        <div class="loading">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/vaso-02.jpg"
+                                                alt="Vaso de flores de algodão.">
+                                            <div class="catalog-infos">
+                                                <h3 class="text-colored fw-bold">Rústico <br> Encantador</h3>
+                                                <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
-                                        <img class="d-block w-100 rounded-top"
-                                            src="../assets/images/catalogo/vaso-03.jpg" alt="Vaso de rosas roxas.">
+                                        <div class="loading">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/vaso-03.jpg" alt="Vaso de rosas roxas.">
 
-                                        <div class="catalog-infos">
-                                            <h3 class="text-colored fw-bold">Harmonia <br> Floral</h3>
-                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            <div class="catalog-infos">
+                                                <h3 class="text-colored fw-bold">Harmonia <br> Floral</h3>
+                                                <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            </div>
                                         </div>
                                     </div>
 
                                     <div class="col-md-6 mb-4 col-11 col-lg-3">
-                                        <img class="d-block w-100 rounded-top"
-                                            src="../assets/images/catalogo/vaso-04.jpg" alt="Vasos de rosas laranjas.">
+                                        <div class="loading">
+                                            <img class="d-block w-100 rounded-top lazyload"
+                                                data-src="../public/images/vaso-04.jpg" alt="Vasos de rosas laranjas.">
 
-                                        <div class="catalog-infos">
-                                            <h3 class="text-colored fw-bold">Aromas da <br> Provence</h3>
-                                            <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            <div class="catalog-infos">
+                                                <h3 class="text-colored fw-bold">Aromas da <br> Provence</h3>
+                                                <span class="text-uppercase fw-bold"><sup>R$</sup> 2,99</span>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -472,7 +488,8 @@
                             </p>
                         </div>
                         <div class="map">
-                            <img class="rounded" src="../assets/images/mapa.png" alt="localização da loja no mapa">
+                            <img class="rounded lazyload" data-src="../public/images/mapa.png"
+                                alt="localização da loja no mapa">
                         </div>
                     </div>
                 </div>
@@ -487,7 +504,8 @@
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../libs/jquery/jquery.mask.js"></script>
     <script src="../libs/bootstrap/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="../libs/lazysizes/lazysizes.min.js" async></script>
+    <script src="../public/js/scripts.js"></script>
 
     <script>
         $(document).ready(function () {
