@@ -160,13 +160,13 @@ footer a:hover {
     height: 150px;
 }
 
-.btn-submit {
+#contact button {
     letter-spacing: .5px;
     font-size: 1rem;
     text-transform: uppercase;
 }
 
-.btn-submit:hover {
+#contact button:hover {
     background-color: rgb(62, 107, 107);
 }
 

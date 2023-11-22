@@ -1,5 +1,5 @@
 const allImages = document.querySelectorAll('div .loading')
-const btnSubmit = document.querySelector('btn-submit')
+const btnSubmit = document.querySelector('#btn-submit')
 
 function showImages() {
    allImages.forEach(img => {
@@ -14,8 +14,6 @@ window.addEventListener('load', () => {
 function validate(elem) {
    if (elem.val() == '') {
 
-      console.log('o campo de ' + elem.attr('name') + ' é obrigatório')
-
       elem.parent().find('.text-muted').show()
 
       elem.addClass('invalid')
@@ -27,7 +25,7 @@ function validate(elem) {
    }
 }
 
-$('form').on('submit', function (e) {
+btnSubmit.addEventListener('click', function (e) {
 
    e.preventDefault()
 
@@ -38,12 +36,17 @@ $('form').on('submit', function (e) {
    validate(inputEmail)
 
    if (inputEmail.hasClass('invalid') || inputName.hasClass('invalid')) {
-      console.log('verificar campos obrigatórios')
       return false
    } else {
+      btnSubmit.disabled = true
+      btnSubmit.innerHTML = 'ENVIANDO...'
+
+      setTimeout(function () {
+         btnSubmit.disabled = false
+         btnSubmit.innerHTML = 'MENSAGEM ENVIADA!'
+      }, 3000)
       $(this).submit()
    }
-
 })
 
 $('body').on('blur', '#name', function () {
@@ -57,11 +60,3 @@ $('body').on('blur', '#email', function () {
 $('body').on('blur', '#msg', function () {
    validate($(this))
 })
-
-const submitForm = (e) => {
-   e.preventDefault()
-
-   setTimeout()
-
-}
-
