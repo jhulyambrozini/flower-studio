@@ -214,16 +214,17 @@
                     </h2>
                 </div>
                 <div class="row mt-4">
-                    <aside class="col-md-2 col-sm-4 loading">
+                    <aside class="col-md-2 col-sm-4">
                         <nav class="nav nav-pills flex-column nav-menu">
                             <button title="Catálogo de buquês" type="button" data-bs-toggle="tab"
                                 data-bs-target="#buques"
-                                class="nav-link text-colored fw-bold text-start active">Buquês</button>
+                                class="nav-link text-colored fw-bold text-start active loading mb-2">Buquês</button>
                             <button title="Catálogo de guirlandas" type="button" data-bs-toggle="tab"
                                 data-bs-target="#guirlandas"
-                                class="nav-link text-colored fw-bold text-start">Quirlandas</button>
+                                class="nav-link text-colored fw-bold text-start loading mb-2">Quirlandas</button>
                             <button title="Catálogo de vasos floridos" type="button" data-bs-toggle="tab"
-                                data-bs-target="#vasos" class="nav-link text-colored fw-bold text-start">Vasos</button>
+                                data-bs-target="#vasos"
+                                class="nav-link text-colored fw-bold text-start loading">Vasos</button>
                         </nav>
                     </aside>
                     <div class="col-md-10 col-sm-8">
@@ -400,16 +401,16 @@
                 </div>
 
                 <div class="row justify-content-center justify-content-md-between">
-                    <div class="col-md-6 col-lg-4 mb-5 loading mt-4 col-11">
+                    <div class="col-md-6 col-lg-4 mb-5 mt-4 col-11">
                         <form id="form-validate">
-                            <div class="mb-3 group-input">
+                            <div class="mb-3 group-input loading">
                                 <label class="form-label fw-bold text-colored" for="name">Seu nome</label>
                                 <input type="text" class="form-control" id="name" minlength="3" required>
                                 <small id="helpName" class="text-muted" style="color: #C50404;">
                                     Por favor, digite seu nome.
                                 </small>
                             </div>
-                            <div class="mb-3 group-input">
+                            <div class="mb-3 group-input loading">
                                 <label class="form-label fw-bold text-colored" for="email">Seu email</label>
                                 <input type="email" class="form-control" id="email" placeholder="exemple@email.com.br"
                                     required>
@@ -417,7 +418,7 @@
                                     Por favor, digite um email válido.
                                 </small>
                             </div>
-                            <div class="mb-3 group-input">
+                            <div class="mb-3 group-input loading">
                                 <label class="form-label fw-bold text-colored" for="msg">Sua mensagem</label>
                                 <textarea type="text" class="form-control" id="msg" maxlength="300" minlength="10"
                                     placeholder="Digite sua mensagem aqui..." required></textarea>
@@ -425,12 +426,12 @@
                                     Por favor, digite uma mensagem.
                                 </small>
                             </div>
-                            <button type="submit" class="btn mb-sm-3" id="btn-submit">enviar mensagem</button>
+                            <button type="submit" class="btn mb-sm-3 loading" id="btn-submit">enviar mensagem</button>
                         </form>
                     </div>
 
-                    <div class="col-md-6 loading mt-4 col-11">
-                        <div class="row">
+                    <div class="col-md-6 mt-4 col-11">
+                        <div class="row loading">
                             <h3 class="text-colored fs-4 section-title">
                                 Redes sociais
                             </h3>
@@ -468,7 +469,7 @@
                             </ul>
                         </div>
 
-                        <div class="row mt-5 mt-sm-3">
+                        <div class="row mt-5 mt-sm-3 loading">
                             <h3 class="text-colored fs-4 section-title">
 
                                 Endereço
@@ -478,7 +479,7 @@
                                 Bairro Bootstrap - São Mateus - ES
                             </p>
                         </div>
-                        <div class="map">
+                        <div class="map loading mt-1 mt-sm-2">
                             <img class="rounded lazyload" data-src="../public/images/mapa.png"
                                 alt="localização da loja no mapa">
                         </div>
