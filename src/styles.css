@@ -43,6 +43,11 @@ p {
     font-size: 2.5rem;
 }
 
+.navbar-toggler {
+    border: 1px solid #fff !important;
+    background-color: transparent !important;
+}
+
 .nav .nav-link:hover {
     background-color: rgb(36, 61, 61);
 }
@@ -305,6 +310,10 @@ footer a {
         font-size: 1rem;
     }
 
+    .navbar-brand {
+        font-size: 32px;
+    }
+
     .social-links a span {
         font-size: 1rem;
     }
@@ -321,17 +330,17 @@ footer a {
     }
 
     #header {
-        padding: 8px 0 !important;
-    }
-
-    #header ul {
-        display: flex;
-        flex-direction: column;
-        align-items: end;
+        padding: 16px 0 !important;
     }
 
     .nav-link {
-        padding: 12px;
+        font-size: 1rem;
+        padding: 4px 8px;
+    }
+
+    #header .nav-link svg {
+        display: none;
+        visibility: hidden;
     }
 
     #catalog aside {
