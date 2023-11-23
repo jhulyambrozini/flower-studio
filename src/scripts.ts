@@ -1,11 +1,10 @@
-const elementsLoading = document.querySelectorAll('div .loading')
-const btnCatalog: NodeListOf<HTMLButtonElement> | null = document.querySelectorAll('button.catalog-btn')
 const btnSubmit: HTMLButtonElement | null = document.querySelector('#btn-submit')
-const guirlandaIMG = document.querySelectorAll('#guirlandas img')
-const vasosIMG = document.querySelectorAll('#vasos img')
+const elementsLoading = document.querySelectorAll('div .loading')
+const btnCatalog: NodeListOf<HTMLButtonElement> = document.querySelectorAll('button.catalog-btn')
+const guirlandaIMG: NodeListOf<HTMLImageElement> = document.querySelectorAll('#guirlandas img')
+const vasosIMG: NodeListOf<HTMLImageElement> = document.querySelectorAll('#vasos img')
 
-/* validate form */
-
+// validate form
 function validate(element: HTMLElement) {
    if (element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement)
       if (element.value == '') {
@@ -17,13 +16,15 @@ function validate(element: HTMLElement) {
       }
 }
 
+// validates the field when losing focus
 document.addEventListener('blur', function (e: FocusEvent) {
    const target = e.target as HTMLElement
-   if (target.tagName.toLowerCase() === 'input' || target.tagName.toLowerCase() === 'textarea') {
+   if (target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement) {
       validate(target)
    }
 }, true);
 
+// form submission
 btnSubmit?.addEventListener('click', function (e) {
 
    e.preventDefault()
@@ -37,58 +38,55 @@ btnSubmit?.addEventListener('click', function (e) {
       validate(inputEmail)
       validate(textarea)
 
-      if (inputEmail.classList.contains('invalid') || inputName.classList.contains('invalid') || textarea.classList.contains('invalid')) {
-         return false
-      } else {
-         btnSubmit.disabled = true
-         btnSubmit.innerHTML = 'ENVIANDO...'
+      const invalidEntries = inputEmail.classList.contains('invalid') || inputName.classList.contains('invalid') || textarea.classList.contains('invalid')
 
-         setTimeout(function () {
-            btnSubmit.disabled = false
-            btnSubmit.innerHTML = 'MENSAGEM ENVIADA!'
+      if (invalidEntries) return
 
-            console.log(inputEmail.innerHTML)
-         }, 3000)
-      }
+      btnSubmit.disabled = true
+      btnSubmit.innerHTML = 'ENVIANDO...'
+
+      setTimeout(function () {
+         btnSubmit.disabled = false
+         btnSubmit.innerHTML = 'MENSAGEM ENVIADA!'
+
+         inputEmail.value = ''
+         inputName.value = ''
+         textarea.value = ''
+      }, 3000)
+
    }
 })
 
 /* loading */
-function showImages() {
-   elementsLoading.forEach(elem => {
-      elem.classList.remove('loading')
-   })
-}
 
+//remove element loading skeleton in interface
 window.addEventListener('load', () => {
    elementsLoading.forEach(() => {
-      showImages()
+      elementsLoading.forEach(elem => {
+         elem.classList.remove('loading')
+      })
    })
 });
 
+// remove catalog loading skeleton
 btnCatalog.forEach(btn => {
    btn.addEventListener('click', () => {
       let btnTarget = btn.dataset['bsTarget']
 
-      if (btnTarget == '#guirlandas') {
+      if (btnTarget === '#guirlandas') {
          guirlandaIMG.forEach((img) => {
-            if (img instanceof HTMLImageElement) {
-               img.addEventListener('load', () => {
-                  img.parentElement?.classList.remove('loadingCatalog')
-               })
-            }
+            img.addEventListener('load', () => {
+               img.parentElement?.classList.remove('loadingCatalog')
+            })
          })
       }
 
-      if (btnTarget == '#vasos') {
+      if (btnTarget === '#vasos') {
          vasosIMG.forEach((img) => {
-            if (img instanceof HTMLImageElement) {
-               img.addEventListener('load', () => {
-                  img.parentElement?.classList.remove('loadingCatalog')
-               })
-            }
+            img.addEventListener('load', () => {
+               img.parentElement?.classList.remove('loadingCatalog')
+            })
          })
       }
-
    })
 })
