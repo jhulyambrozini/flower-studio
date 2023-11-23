@@ -187,7 +187,7 @@ footer a:hover {
 
 .map img {
     width: 100%;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
 }
 
@@ -211,7 +211,6 @@ footer a {
 
 .text-muted {
     display: none;
-    color: #C50404 !important;
 }
 
 /* loading */
@@ -262,7 +261,7 @@ footer a {
     }
 
     #about img {
-        height: 500px;
+        height: 300px;
     }
 
     .social-links {
@@ -272,7 +271,7 @@ footer a {
     }
 
     .map img {
-        height: 220px;
+        height: 200px;
     }
 
     #contact h3 {

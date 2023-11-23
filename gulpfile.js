@@ -1,11 +1,14 @@
-const gulp = require('gulp');
-const cleanCSS = require('gulp-clean-css');
+const gulp = require('gulp')
+const cleanCSS = require('gulp-clean-css')
 const imagemin = require('gulp-imagemin')
-const uglify = require('gulp-uglify')
+const ts = require('gulp-typescript')
 
 function scripts() {
-    return gulp.src('./src/scripts.js')
-        .pipe(uglify())
+    return gulp.src('./src/scripts.ts')
+        .pipe(ts({
+            noImplicitAny: false,
+            outFile: 'main.js'
+        }))
         .pipe(gulp.dest('./public/js'))
 }
 
@@ -25,5 +28,5 @@ function images() {
 exports.default = gulp.parallel(styles, images, scripts)
 exports.watch = function () {
     gulp.watch('./src/styles.css', gulp.parallel(styles))
-    gulp.watch('./src/scripts.js', gulp.parallel(scripts))
+    gulp.watch('./src/scripts.ts', gulp.parallel(scripts))
 }

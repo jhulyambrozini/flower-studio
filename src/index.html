@@ -119,13 +119,6 @@
                                 de cores e fragrâncias. Localizada em um pitoresco cantinho da cidade, nossa loja é um
                                 refúgio encantador para os amantes da natureza e da beleza floral.
                             </p>
-
-                            <p class="loading">
-                                Ao adentrar o espaço aconchegante da Flower Studio, você será recebido por um mar de
-                                cores vibrantes e uma sinfonia de aromas florais que despertam os sentidos. Nossas
-                                prateleiras exibem flores frescas, desde as clássicas rosas até as exóticas orquídeas,
-                                cada uma representando qualidade e beleza.
-                            </p>
                             <p class="loading">
                                 Seja para celebrar aniversários, expressar amor, oferecer condolências ou simplesmente
                                 iluminar o dia de alguém especial, nossos arranjos florais são criações únicas,
@@ -411,28 +404,24 @@
                             <div class="mb-3 group-input">
                                 <label class="form-label fw-bold text-colored" for="name">Seu nome</label>
                                 <input type="text" class="form-control" id="name" minlength="3" required>
-                                <small id="helpName" class="text-muted">
-                                    Digite um nome válido!
+                                <small id="helpName" class="text-muted" style="color: #C50404;">
+                                    Por favor, digite seu nome.
                                 </small>
                             </div>
                             <div class="mb-3 group-input">
                                 <label class="form-label fw-bold text-colored" for="email">Seu email</label>
                                 <input type="email" class="form-control" id="email" placeholder="exemple@email.com.br"
                                     required>
-                                <small id="helpEmail" class="text-muted">
-                                    Digite um email válido!
+                                <small id="helpEmail" class="text-muted" style="color: #C50404;">
+                                    Por favor, digite um email válido.
                                 </small>
-                            </div>
-                            <div class="mb-3 group-input">
-                                <label class="form-label fw-bold text-colored" for="tel">Seu telefone (opcional)</label>
-                                <input type="tel" class="form-control" id="tel" placeholder="(11) 00000-0000">
                             </div>
                             <div class="mb-3 group-input">
                                 <label class="form-label fw-bold text-colored" for="msg">Sua mensagem</label>
                                 <textarea type="text" class="form-control" id="msg" maxlength="300" minlength="10"
-                                    required placeholder="Digite sua mensagem aqui..."></textarea>
-                                <small id="helpText" class="text-muted">
-                                    Você precisa digitar algo!
+                                    placeholder="Digite sua mensagem aqui..." required></textarea>
+                                <small id="helpText" class="text-muted" style="color: #C50404;">
+                                    Por favor, digite uma mensagem.
                                 </small>
                             </div>
                             <button type="submit" class="btn mb-sm-3" id="btn-submit">enviar mensagem</button>
@@ -501,17 +490,10 @@
             <small>Desenvolvido por <a href="https://github.com/jhulyambrozini">Jhuly</a></small>
         </footer>
     </div>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-    <script src="../libs/jquery/jquery.mask.js"></script>
     <script src="../libs/bootstrap/bootstrap.min.js"></script>
     <script src="../libs/lazysizes/lazysizes.min.js" async></script>
-    <script src="../public/js/scripts.js"></script>
+    <script src="../public/js/main.js"></script>
 
-    <script>
-        $(document).ready(function () {
-            $('#tel').mask('(00) 00000-0000');
-        })
-    </script>
 </body>
 
 </html>
