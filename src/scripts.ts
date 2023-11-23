@@ -1,5 +1,8 @@
-const allImages = document.querySelectorAll('div .loading')
+const elementsLoading = document.querySelectorAll('div .loading')
+const btnCatalog: NodeListOf<HTMLButtonElement> | null = document.querySelectorAll('button.catalog-btn')
 const btnSubmit: HTMLButtonElement | null = document.querySelector('#btn-submit')
+const guirlandaIMG = document.querySelectorAll('#guirlandas img')
+const vasosIMG = document.querySelectorAll('#vasos img')
 
 /* validate form */
 
@@ -52,11 +55,40 @@ btnSubmit?.addEventListener('click', function (e) {
 
 /* loading */
 function showImages() {
-   allImages.forEach(img => {
-      img.classList.remove('loading')
+   elementsLoading.forEach(elem => {
+      elem.classList.remove('loading')
    })
 }
 
 window.addEventListener('load', () => {
-   showImages()
+   elementsLoading.forEach(() => {
+      showImages()
+   })
 });
+
+btnCatalog.forEach(btn => {
+   btn.addEventListener('click', () => {
+      let btnTarget = btn.dataset['bsTarget']
+
+      if (btnTarget == '#guirlandas') {
+         guirlandaIMG.forEach((img) => {
+            if (img instanceof HTMLImageElement) {
+               img.addEventListener('load', () => {
+                  img.parentElement?.classList.remove('loadingCatalog')
+               })
+            }
+         })
+      }
+
+      if (btnTarget == '#vasos') {
+         vasosIMG.forEach((img) => {
+            if (img instanceof HTMLImageElement) {
+               img.addEventListener('load', () => {
+                  img.parentElement?.classList.remove('loadingCatalog')
+               })
+            }
+         })
+      }
+
+   })
+})

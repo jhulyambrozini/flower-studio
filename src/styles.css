@@ -216,12 +216,14 @@ footer a {
 }
 
 /* loading */
-.loading {
+.loading,
+.loadingCatalog {
     position: relative;
 }
 
 
-.loading::after {
+.loading::after,
+.loadingCatalog::after {
     content: '';
     position: absolute;
     top: 0;
