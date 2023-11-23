@@ -3,8 +3,8 @@ body {
 }
 
 #catalog img,
-.map img,
-#about img {
+#about img,
+.map>img {
     box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10);
 }
 
@@ -176,29 +176,63 @@ footer a:hover {
     background-color: rgb(62, 107, 107);
 }
 
-.social-links li {
-    list-style: none;
-    display: inline;
+#contact p {
+    margin: 0;
+}
+
+.social-links {
+    display: flex;
+    font-size: 1.2rem;
+    gap: 2rem;
+}
+
+.social-links a:hover {
+    font-weight: 600;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
 }
 
 .social-links a {
     text-decoration: none;
-    width: 48px;
     color: #2f4f4f;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.social-links a svg:hover {
-    fill: rgb(36, 61, 61);
+.map {
+    display: flex;
+    flex-direction: column;
 }
 
-.map img {
+.map a {
+    border-bottom: 1px solid #2f4f4f;
+    text-decoration: none;
+    color: #2f4f4f;
+    padding-bottom: 4px;
+    align-items: center;
+    display: flex;
+    width: 122px;
+}
+
+.map:hover {
+    font-weight: 700;
+}
+
+.map a:hover {
+    border-bottom: 2px solid #2f4f4f;
+}
+
+.map>img {
     width: 100%;
-    height: 280px;
+    height: 140px;
     object-fit: cover;
 }
 
 /* footer */
-
 footer {
     background-color: #2f4f4f;
     color: #fff;
@@ -258,23 +292,8 @@ footer a {
 /* responsive */
 
 @media (max-width: 769px) {
-
     #header ul {
         justify-content: center;
-    }
-
-    .social-links {
-        display: flex;
-        flex-direction: column;
-        row-gap: 8px;
-    }
-
-    .map img {
-        height: 180px;
-    }
-
-    #contact h3 {
-        margin-bottom: 12px;
     }
 }
 
@@ -283,6 +302,10 @@ footer a {
 @media (max-width: 426px) {
 
     p {
+        font-size: 1rem;
+    }
+
+    .social-links a span {
         font-size: 1rem;
     }
 
@@ -313,6 +336,10 @@ footer a {
 
     #catalog aside {
         margin-bottom: 24px;
+    }
+
+    .map {
+        margin-top: .5rem;
     }
 
 }
