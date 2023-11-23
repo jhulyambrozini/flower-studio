@@ -1,23 +1,17 @@
 var allImages = document.querySelectorAll('div .loading');
 var btnSubmit = document.querySelector('#btn-submit');
-function showImages() {
-    allImages.forEach(function (img) {
-        img.classList.remove('loading');
-    });
-}
-window.addEventListener('load', function () {
-    showImages();
-});
+/* validate form */
 function validate(element) {
     var _a, _b;
-    if (element.value == '') {
-        (_a = element.nextElementSibling) === null || _a === void 0 ? void 0 : _a.classList.remove('text-muted');
-        element.classList.add('invalid');
-    }
-    else {
-        element.classList.remove('invalid');
-        (_b = element.nextElementSibling) === null || _b === void 0 ? void 0 : _b.classList.add('text-muted');
-    }
+    if (element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement)
+        if (element.value == '') {
+            (_a = element.nextElementSibling) === null || _a === void 0 ? void 0 : _a.classList.remove('text-muted');
+            element.classList.add('invalid');
+        }
+        else {
+            element.classList.remove('invalid');
+            (_b = element.nextElementSibling) === null || _b === void 0 ? void 0 : _b.classList.add('text-muted');
+        }
 }
 document.addEventListener('blur', function (e) {
     var target = e.target;
@@ -47,4 +41,13 @@ btnSubmit === null || btnSubmit === void 0 ? void 0 : btnSubmit.addEventListener
             }, 3000);
         }
     }
+});
+/* loading */
+function showImages() {
+    allImages.forEach(function (img) {
+        img.classList.remove('loading');
+    });
+}
+window.addEventListener('load', function () {
+    showImages();
 });

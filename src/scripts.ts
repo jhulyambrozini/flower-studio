@@ -1,29 +1,21 @@
-
 const allImages = document.querySelectorAll('div .loading')
 const btnSubmit: HTMLButtonElement | null = document.querySelector('#btn-submit')
 
-function showImages() {
-   allImages.forEach(img => {
-      img.classList.remove('loading')
-   })
-}
+/* validate form */
 
-window.addEventListener('load', () => {
-   showImages()
-});
-
-function validate(element: HTMLInputElement | HTMLTextAreaElement) {
-   if (element.value == '') {
-      element.nextElementSibling?.classList.remove('text-muted')
-      element.classList.add('invalid')
-   } else {
-      element.classList.remove('invalid')
-      element.nextElementSibling?.classList.add('text-muted')
-   }
+function validate(element: HTMLElement) {
+   if (element instanceof HTMLInputElement || element instanceof HTMLTextAreaElement)
+      if (element.value == '') {
+         element.nextElementSibling?.classList.remove('text-muted')
+         element.classList.add('invalid')
+      } else {
+         element.classList.remove('invalid')
+         element.nextElementSibling?.classList.add('text-muted')
+      }
 }
 
 document.addEventListener('blur', function (e: FocusEvent) {
-   const target = e.target as HTMLInputElement | HTMLTextAreaElement
+   const target = e.target as HTMLElement
    if (target.tagName.toLowerCase() === 'input' || target.tagName.toLowerCase() === 'textarea') {
       validate(target)
    }
@@ -58,3 +50,13 @@ btnSubmit?.addEventListener('click', function (e) {
    }
 })
 
+/* loading */
+function showImages() {
+   allImages.forEach(img => {
+      img.classList.remove('loading')
+   })
+}
+
+window.addEventListener('load', () => {
+   showImages()
+});
