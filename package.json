@@ -4,7 +4,6 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "build": "gulp",
     "dev": "gulp watch"
   },
@@ -14,10 +13,13 @@
   "devDependencies": {
     "gulp": "^4.0.2",
     "gulp-clean-css": "^4.3.0",
-    "gulp-imagemin": "^7.1.0"
+    "gulp-imagemin": "^7.1.0",
+    "gulp-uglify": "^3.0.2",
+    "undici-types": "^6.2.1"
   },
   "dependencies": {
     "gulp-typescript": "^6.0.0-alpha.1",
     "typescript": "^5.3.2"
+    
   }
 }
