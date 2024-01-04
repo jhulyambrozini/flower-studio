@@ -19,19 +19,19 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-lg sticky-top p-4" id="header">
+    <header class="navbar navbar-expand-lg sticky-top p-4" id="header" aria-label="cabeçalho">
         <div class="container">
             <h1 class="navbar-brand m-0 section-title">Flower Studio</h1>
-            <button title="menu" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
+            <button title="menu" aria-label="Menu" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu-nav">
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#fff" class="bi bi-list"
-                    viewBox="0 0 16 16">
+                    viewBox="0 0 16 16" aria-label="Três barrinhas brancas">
                     <path fill-rule="evenodd"
                         d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5" />
                 </svg>
             </button>
-            <nav class="navbar-collapse collapse justify-content-end mt-2 mt-sm-0" id="menu-nav">
+            <nav class="navbar-collapse collapse justify-content-end mt-2 mt-sm-0" id="menu-nav" aria-label="Barra de navegação">
                 <ul class="nav nav-pills gap-1">
-                    <li class="nav-item fw-bold" data-toggle="collapse">
+                    <li class="nav-item fw-bold" data-toggle="collapse" aria-label="Link de navegação">
                         <a class="nav-link" href="#about" title="Ir para sobre">
                             <span>Sobre</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
@@ -41,7 +41,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="nav-item fw-bold" data-toggle="collapse">
+                    <li class="nav-item fw-bold" data-toggle="collapse" aria-label="lLink de navegação">
                         <a class="nav-link" href="#events" title="Ir para eventos">
                             <span>Eventos</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
@@ -51,7 +51,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="nav-item fw-bold" data-toggle="collapse">
+                    <li class="nav-item fw-bold" data-toggle="collapse" aria-label="Link de navegação">
                         <a class="nav-link" href="#catalog" title="Ir para catálogo">
                             <span>Catálogo</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
@@ -63,7 +63,7 @@
                             </svg>
                         </a>
                     </li>
-                    <li class="nav-item fw-bold" data-toggle="collapse">
+                    <li class="nav-item fw-bold" data-toggle="collapse" aria-label="Link de navegação">
                         <a class="nav-link" href="#contact" title="Ir para contato">
                             <span>Contato</span>
                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#fff"
@@ -81,7 +81,7 @@
     </header>
 
     <div data-bs-spy="scroll" data-bs-target="cabecalho" data-bs-smooth-scroll="true">
-        <section id="carousel-container">
+        <section id="carousel-container" aria-label="Carrosel de imagens">
             <div class="carousel slide carousel-fade" data-bs-ride="carousel" id="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active loading" data-bs-interval="4000">
@@ -106,57 +106,56 @@
                     <span class="carousel-control-next-icon"></span>
                 </button>
             </div>
+        </section>
 
-            <div class="pt-5 pb-5" id="about">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-md-6 col-11 loading">
-                            <img class="w-100 rounded d-block lazyload" data-src="./public/images/bancada.jpg"
-                                alt="Duas funcionárias brancas usando aventais atrás de um balcão, uma segura uma cesta com flores. Ambas estão sorrindo.">
-                        </div>
+        <section class="pt-5 pb-5" id="about" aria-label="Sobre">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6 col-11 loading">
+                        <img class="w-100 rounded d-block lazyload" data-src="./public/images/bancada.jpg"
+                            alt="Duas funcionárias brancas usando aventais atrás de um balcão, uma segura uma cesta com flores. Ambas estão sorrindo.">
+                    </div>
 
-                        <div class="col-md-6 col-11 mt-3 mt-md-0">
-                            <h2 class="section-title loading"> Sobre <span class="text-colored">a Flower</span></h2>
+                    <div class="col-md-6 col-11 mt-3 mt-md-0">
+                        <h2 class="section-title loading"> Sobre <span class="text-colored">a Flower</span></h2>
 
-                            <p class="loading mt-2">
-                                Bem-vindo à Flower Studio, a floricultura que transforma cada ocasião em um espetáculo
-                                de cores e fragrâncias. Localizada em um agradável cantinho da cidade, nossa loja é um
-                                refúgio encantador para os amantes da natureza e da beleza floral.
-                            </p>
-                            <p class="loading">
-                                Seja para celebrar aniversários, expressar amor, oferecer condolências ou simplesmente
-                                iluminar o dia de alguém especial, nossos arranjos florais são criações únicas,
-                                elaboradas pelos nossos talentosos floristas. Cada ramalhete é uma obra-prima artesanal,
-                                combinando cores, texturas e formas para transmitir emoções de maneira única.
-                            </p>
-                            <h3 class="section-title mt-5 loading">Sobre <span class="text-colored">encomendas</span>
-                            </h3>
-                            <p class="loading mt-2">
-                                Também valorizamos a personalização, e é por isso que oferecemos um serviço de
-                                encomendas especializado. Se você tem uma ideia específica em mente ou deseja adaptar um
-                                arranjo existente, nossa equipe dedicada está pronta para transformar sua visão em
-                                realidade.
-                            </p>
-                            <p class="loading">
-                                Além disso, facilitamos o processo de encomenda online, proporcionando conveniência aos
-                                nossos clientes ocupados. Basta navegar em nosso catálogo virtual, escolher entre uma
-                                variedade de opções e personalizar conforme necessário. Nossa entrega pontual e serviço
-                                dedicado asseguram que suas flores cheguem frescas e impecáveis ao destino desejado.
-                            </p>
-                        </div>
+                        <p class="loading mt-2">
+                            Bem-vindo à Flower Studio, a floricultura que transforma cada ocasião em um espetáculo
+                            de cores e fragrâncias. Localizada em um agradável cantinho da cidade, nossa loja é um
+                            refúgio encantador para os amantes da natureza e da beleza floral.
+                        </p>
+                        <p class="loading">
+                            Seja para celebrar aniversários, expressar amor, oferecer condolências ou simplesmente
+                            iluminar o dia de alguém especial, nossos arranjos florais são criações únicas,
+                            elaboradas pelos nossos talentosos floristas. Cada ramalhete é uma obra-prima artesanal,
+                            combinando cores, texturas e formas para transmitir emoções de maneira única.
+                        </p>
+                        <h3 class="section-title mt-5 loading">Sobre <span class="text-colored">encomendas</span>
+                        </h3>
+                        <p class="loading mt-2">
+                            Também valorizamos a personalização, e é por isso que oferecemos um serviço de
+                            encomendas especializado. Se você tem uma ideia específica em mente ou deseja adaptar um
+                            arranjo existente, nossa equipe dedicada está pronta para transformar sua visão em
+                            realidade.
+                        </p>
+                        <p class="loading">
+                            Além disso, facilitamos o processo de encomenda online, proporcionando conveniência aos
+                            nossos clientes ocupados. Basta navegar em nosso catálogo virtual, escolher entre uma
+                            variedade de opções e personalizar conforme necessário. Nossa entrega pontual e serviço
+                            dedicado asseguram que suas flores cheguem frescas e impecáveis ao destino desejado.
+                        </p>
                     </div>
                 </div>
-
             </div>
         </section>
 
-        <section id="events" class="pt-5 pb-5">
+        <section id="events" class="pt-5 pb-5"  aria-label="Eventos">
             <div class="container">
                 <div class="row loading">
                     <h2 class="section-title text-center">Para todas <span class="text-colored"> as ocasiões</span></h2>
                 </div>
                 <div class="row mt-4 justify-content-center">
-                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card aniversário">
                         <div class="loading card-events">
                             <img data-src="./public/images/eventos-aniversario.jpg"
                                 alt="Uma cesta pendurada um galho de árvore com rosas claras dentro."
@@ -169,7 +168,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                    <div class="col-md-6 mb-4 col-11 col-lg-3"  aria-label="Card casamento">
                         <div class="loading card-events">
                             <img data-src="./public/images/eventos-casamento.jpg"
                                 alt="Vasos com flores diversas em cima de uma mesa, ao fundo um pergolado florido."
@@ -182,7 +181,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                    <div class="col-md-6 mb-4 col-11 col-lg-3"  aria-label="Card noiva">
                         <div class="loading card-events">
                             <img data-src="../public/images/eventos-noiva.jpg" alt="Buquê de tulipas roxas"
                                 class="d-block w-100 rounded-top lazyload">
@@ -194,7 +193,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                    <div class="col-md-6 mb-4 col-11 col-lg-3"  aria-label="Card funerais">
                         <div class="loading card-events">
                             <img data-src="../public/images/eventos-funeral.jpg"
                                 alt="Grande vaso com rosas amarelas, vermelhas e rosas ao lado de um castiçal."
@@ -210,7 +209,7 @@
             </div>
         </section>
 
-        <section id="catalog" class="pt-5 pb-5">
+        <section id="catalog" class="pt-5 pb-5" aria-label="Catalogo">
             <div class="container">
                 <div class="row loading pb-1">
                     <h2 class="section-title text-center">
@@ -218,7 +217,7 @@
                     </h2>
                 </div>
                 <div class="row mt-4">
-                    <aside class="col-md-2 col-sm-4">
+                    <aside class="col-md-2 col-sm-4" aria-label="Navegação">
                         <nav class="nav nav-pills flex-column nav-menu">
                             <button title="Catálogo de buquês" type="button" data-bs-toggle="tab"
                                 data-bs-target="#buques"
@@ -233,9 +232,9 @@
                     </aside>
                     <div class="col-md-10 col-sm-8">
                         <div class="tab-content">
-                            <div class="tab-pane active" id="buques">
+                            <div class="tab-pane active" id="buques" aria-label="Buquês">
                                 <div class="row justify-content-center">
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card Buquê">
                                         <div class="loading">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/buque-01.jpg"
@@ -247,7 +246,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card Buquê">
                                         <div class="loading">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/buque-02.jpg"
@@ -260,7 +259,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card Buquê">
                                         <div class="loading">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/buque-03.jpg"
@@ -273,7 +272,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card Buquê">
                                         <div class="loading">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/buque-04.jpg" alt="Buquê de rosas vermelhas.">
@@ -287,9 +286,9 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane" id="guirlandas">
+                            <div class="tab-pane" id="guirlandas" aria-label="Guirlandas">
                                 <div class="row justify-content-center">
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card guirlanda">
                                         <div class="loadingCatalog">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/guirlanda-01.jpg"
@@ -302,7 +301,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card guirlanda">
                                         <div class="loadingCatalog">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/guirlanda-02.jpg"
@@ -315,7 +314,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card guirlanda">
                                         <div class="loadingCatalog">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/guirlanda-03.jpg"
@@ -328,7 +327,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card guirlanda">
                                         <div class="loadingCatalog">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/guirlanda-04.jpg"
@@ -343,9 +342,9 @@
                                 </div>
                             </div>
 
-                            <div class="tab-pane" id="vasos">
+                            <div class="tab-pane" id="vasos" aria-label="Vasos">
                                 <div class="row justify-content-center">
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card vaso">
                                         <div class="loadingCatalog">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/vaso-01.jpg" alt="Vaso de rosas.">
@@ -357,7 +356,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card vaso">
                                         <div class="loadingCatalog">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/vaso-02.jpg" alt="Vaso de rosas diversas.">
@@ -368,7 +367,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card vaso">
                                         <div class="loadingCatalog">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/vaso-03.jpg"
@@ -381,7 +380,7 @@
                                         </div>
                                     </div>
 
-                                    <div class="col-md-6 mb-4 col-11 col-lg-3">
+                                    <div class="col-md-6 mb-4 col-11 col-lg-3" aria-label="Card vaso">
                                         <div class="loadingCatalog">
                                             <img class="d-block w-100 rounded-top lazyload"
                                                 data-src="./public/images/vaso-04.jpg"
@@ -401,7 +400,7 @@
             </div>
         </section>
 
-        <section id="contact" class="pt-5 pb-5">
+        <section id="contact" class="pt-5 pb-5" aria-label="Contato">
             <div class="container">
                 <div class="row">
                     <h2 class="section-title loading text-center text-sm-start"> Fale <span
@@ -410,7 +409,7 @@
 
                 <div class="row justify-content-center justify-content-md-between">
                     <div class="col-md-6 col-lg-4 mb-5 mt-4 col-11">
-                        <form id="form-validate">
+                        <form id="form-validate" aria-label="Formulário">
                             <div class="mb-3 group-input loading">
                                 <label class="form-label fw-bold text-colored" for="name">Seu nome</label>
                                 <input type="text" class="form-control" id="name" minlength="3" required>
