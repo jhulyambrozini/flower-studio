@@ -217,10 +217,10 @@ footer a:hover {
     border-bottom: 1px solid #2f4f4f;
     text-decoration: none;
     color: #2f4f4f;
-    padding-bottom: 4px;
     align-items: center;
     display: flex;
-    width: 122px;
+    gap: 4px;
+    width: 126px;
 }
 
 .map:hover {
