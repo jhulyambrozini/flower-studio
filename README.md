@@ -23,13 +23,7 @@ TypeScript é um superconjunto de JavaScript que adiciona digitação estática 
 Gulp é um executor de tarefas que automatiza tarefas comuns de desenvolvimento, como minificação, compilação, testes unitários e muito mais. Os desenvolvedores podem criar fluxos de trabalho personalizados ou usar plug-ins existentes para otimizar e organizar sua base de código com eficiência.
 
 ## Como rodar o projeto
-1. Criar um fork ou baixar este repositório.
-
-2. Abrir a pasta no terminal e rodar o comando `npm i`.
-
-3. Quando as dependências terminarem de baixar rodar o comando `npm run build`.
-
-4. E para entrar em modo de desenvolvimento roda o comando `npm run dev`
-
-5. E pronto! O arquivo index.html já pode ser executado no navegador.
-
+- Baixar ou clonar este repositório, no terminal executar `npm i` ou `npm install`
+- Para executar o gulp e a compilação do sass e do typescript, usar o comando `npm run build`
+- Para fins de manutenção executar o comando `npm run dev`
+- Abrir o arquivo index.html no navegador ou simular um servidor com o live server.
