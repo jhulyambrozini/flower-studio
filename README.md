@@ -29,5 +29,7 @@ Gulp é um executor de tarefas que automatiza tarefas comuns de desenvolvimento,
 
 3. Quando as dependências terminarem de baixar rodar o comando `npm run build`.
 
-4. E pronto! O arquivo index.html já pode ser executado no navegador.
+4. E para entrar em modo de desenvolvimento roda o comando `npm run dev`
+
+5. E pronto! O arquivo index.html já pode ser executado no navegador.
 
